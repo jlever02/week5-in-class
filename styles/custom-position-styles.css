@@ -18,6 +18,7 @@ body{
 */
 
 /* Position fixed to make the header stay on screen when the rest of the content scrolls under it. */
+/*
 header {
   position: fixed;
   width:100%;
@@ -29,8 +30,8 @@ header h1 {
   top: 15%;
   left:80%;
   color:white;
-  font-family: Cabin; /* Set the font to Cabin which is a google font. See the video on fonts. */
-}
+  font-family: Cabin;*/ /*  Set the font to Cabin which is a google font. See the video on fonts. */
+/*}
 header p {
   position: relative;
   top:20%;
@@ -47,6 +48,63 @@ header p {
 .pink p {
   clear:both;
 }
+*/
+
+
+
+/* your styles for position-practice.html here */
+
+.clearfix:after {
+  content: "";    
+  display: block;    
+  clear: both; 
+}
+.clear {
+	 clear: both; /* I can't have the clearfix where I want it, so I just created a class of clear that I can use to wipe out the float on the last <p> in the .pink section. */
+}
+.add-margin {
+  margin-bottom:18rem;/* adding this for demonstration purposes of the content in .pink to scroll behind the header object */
+}
+
+body {
+	box-sizing: border-box;
+}
+p {
+  font-family: 'Kaushan Script', cursive;
+}
+/* Position fixed to make the header stay on screen when the rest of the content scrolls under it. */
+header {
+	position:fixed;
+	top:0;
+	height:18rem;
+	width:100%;
+ color:white;
+	z-index: 1; /* Set the z-index so that the other content will scroll behind the header, alternatively you can set the z-index to be higher on the article on line 94 below. The higher the z-index the more it is on top. */
+}
+	header h1 {
+		position:relative;
+	 top: 15%;
+  left:80%;
+  font-family: Cabin; /* Set the font to Cabin which is a google font. See the video on fonts. */
+	}
+	header p {
+		position:relative;
+		top:30%;
+		left:80%;	
+	}
+.pink {
+	position:relative;
+	top:18rem;
+	left:0;
+	margin-top:.5rem;
+/*	z-index: 0;*/
+}
+	.pink img {
+		float:left;
+	}
+
+
+
 
 
 

@@ -1,0 +1,67 @@
+/* your styles for position-practice.html here */
+
+/*
+Set the body to be position:relative so the header can be position absolute.
+body{
+  position:relative; 
+}
+*/
+/*
+
+.blue {
+  position:absolute;
+  top:2rem;
+  left:2rem;
+  z-index: 999;
+  background-color:rgba (120, 0, 49 0.5);
+}
+*/
+
+/* Position fixed to make the header stay on screen when the rest of the content scrolls under it. */
+header {
+  position: fixed;
+  width:100%;
+  height:18rem;
+  
+}
+header h1 {
+  position:relative;
+  top: 15%;
+  left:80%;
+  color:white;
+  font-family: Cabin; /* Set the font to Cabin which is a google font. See the video on fonts. */
+}
+header p {
+  position: relative;
+  top:20%;
+  left:80%;
+}
+
+.pink {
+  margin-top:.5rem;
+}
+
+.pink img {
+  float:left;
+}
+.pink p {
+  clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
